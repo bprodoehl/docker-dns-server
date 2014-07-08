@@ -8,7 +8,7 @@ ENV LANG       en_US.UTF-8
 ENV LC_ALL     en_US.UTF-8
 
 # Install dependencies
-RUN apt-get -y install dnsmasq iptables tcpdump
+RUN apt-get -y install dnsmasq dnsutils iptables tcpdump
 
 RUN mkdir /etc/service/dnsmasq
 ADD dnsmasq.sh /etc/service/dnsmasq/run
